@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <script type = "text/javascript" scr="script.js"></script>
+      <title>First</title>
+    </head>
+
+    <body>
+        <div class ="header">
+            <div class = "first">
+                <div class = "logo">
+                    <p class="t_l">лого</p>
+                </div>
+                <div class = "name">
+                    Натяжные потолки в Москве
+                </div>
+            </div>
+            <div class = "second">
+                <div class = "rasp">Пн-Вс. 8:00-22:00</div>
+                <div class = "kont">
+                    <img class = "icon" alt="Whatsapp" src="pics/whatsapp.jpg">
+                    <p class = "WA">Написать в WhatsApp</p>
+                </div>
+            </div>
+        </div>
+        <div class = "main">
+            <div class = "left">
+                <div class = "text">
+                    <div class = "head">
+                        <em class = "yellow">Установим лучший натяжной</em> <em class = 'N'>потолок</em><b class = "white"> в Москве</b>
+                    </div>
+                    <div class = "osnovnoi">
+                        <p class ="txt">Используем только качественные, проверенные временем материалы. Сотрудничаем с лучшими производителями натяжных потолков.</p>
+                    </div>
+                </div>
+                <div class = "lenta">
+                    <div class = "fon">
+                        <p>Устанавливаем натяжные потолки с 2015 года. <b>Честность и качество</b>  — залог успеха нашей работы!</p>
+                        <div class = "pic"><img src="pics/lenta.png" alt="" width="240px" height="70px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "right">
+                <div class="back"></div>
+
+                <div class="mai">
+                    <div class = "container"><h2>Расчёт стоимости</h2><img class ="calc" src="pics/calc.png" alt="" width="100px" height="100px"></div>
+                    <div class = "polz">
+                        <p class = "sl"><b>Площадь потолка</b></p>
+                        <div class ="sli">
+                            <p class="min">01</p>
+                            <input type="range" id="fader"  class="range" min="1" max="200" value="1" step="1" oninput="outputUpdate(value); range()" >
+                            <output for="fader" id="volume">1 м2</output>
+                            <p class="max">200</p>
+                        </div>
+                        <script type ="text/javascript">
+                            function outputUpdate(vol){
+                                var output = document.querySelector('#volume');
+                                output.value = vol + ' м2';
+                                output.style.left = vol*1.9- 20 + 'px';
+                                if(output.value > 1){
+                                    output.style.left = vol*1.9 - 30 + 'px';
+                                }
+                                if(output.value > 18){
+                                    output.style.left = vol*1.9  - 35 + 'px';
+                                }
+                                if(output.value > 43){
+                                    output.style.left = vol*1.9 - 60 + 'px';
+                                }
+                                if(output.value > 99){
+                                    output.style.left = vol*1.9 - 100+ 'px';
+                                }
+                            }
+                            function outputUpdate1(vol){
+                                var output = document.querySelector('#volume1');
+                                output.value = vol;
+                                output.style.left = vol*38 + 7 + 'px';
+                                if(output.value > 1){
+                                    output.style.left = vol*39 +12 + 'px';
+                                }
+                            }
+                            function outputUpdate2(vol){
+                                var output = document.querySelector('#volume2');
+                                output.value = vol;
+                                output.style.left = vol*38 + 7 + 'px';
+                                if(output.value > 1){
+                                    output.style.left = vol*39 +12 + 'px';
+                                }
+                            }
+                        </script>
+                    </div>
+                    <div class = "polz">
+                        <p class = "sl1"><b>Количество углов</b></p>
+                        <div class ="sli1">
+                            <p class="min1">01</p>
+                            <input type="range" id="fader1"  class="range1" min="1" max="10" value="1" step="1" oninput="outputUpdate1(value); range()" >
+                            <output class ="output1" for="fader1" id="volume1">1</output>
+                            <p class="max1">10</p>
+                        </div>
+                    </div>
+                    <div class = "polz">
+                        <p class = "sl1"><b>Количество светильников</b></p>
+                        <div class ="sli1">
+                            <p class="min1">01</p>
+                            <input type="range" id="fader2"  class="range2" min="1" max="10" value="1" step="1" oninput="outputUpdate2(value); range()" >
+                            <output class ="output2" for="fader2" id="volume2">1</output>
+                            <p class="max1">10</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p class="pri">Цена для вас</p>
+                        <div class = "pric">
+                            <div class="cena"><b>19 577<span class = "rub">₽</span></b></div>
+                            <img class="line" src="pics/line.png" alt="">
+                        </div>
+                    </div>
+                    <input class="tel" type="tel">
+                    <p class = "pole">Ваш номер телефона</p>
+                    <img class="iconc" src="pics/icon.png" alt="">
+                    <a class="zaiyvka" href="" ><p class ="tex">отправить заявку</p></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
