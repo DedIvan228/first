@@ -9,14 +9,15 @@ html{
     min-height: 100%;
     width: 100vw;
     background-size: cover;
-    min-width: 1500px;
+    min-width: 75rem;
+    font-size: 20px;
     align-items: center;
 }
 body{
     min-width: 100vw;
     min-height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     align-items: center;
 
 }
@@ -39,28 +40,28 @@ body{
     align-items: inline-block;
     justify-content: space-between;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0rem;
+    left: 0rem;
     z-index: 10000;
     width: 100%;
     background: #0000004d;
 }
 .logo{
     background-color: gray;
-    width: 250px;
-    height: 94px;
-    border-radius: 50px;
+    width: 12.5rem;
+    height: 4.7rem;
+    border-radius: 2.5rem;
     text-align: center;
     vertical-align: middle;
 }
 .t_l{
     color: white;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 .first{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 50%;
 }
 .struct{
@@ -70,20 +71,19 @@ body{
     align-items: inline-block;
     justify-content: space-between;
     z-index: 10000;
-
     margin: auto;
-    padding: 20px;
+    padding: 1rem;
 }
 .icon{
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
 
 }
 .name{
     color: white;
-    font-size: 20px;
-    width: 250px;
+    font-size: 1rem;
+    width: 12.5rem;
 }
 .kont{
     display: flex;
@@ -92,18 +92,18 @@ body{
 }
 .rasp{
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
 }
 .WA{
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
     text-decoration: underline;
 }
 .second{
     display: flex;
     width: 50%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 
@@ -302,7 +302,7 @@ output{
 .output1{
     position: absolute;
     left: 43px;
-    top: 232px;
+    top: 244px;
     padding: 7px 10px;
     color:  #FEC338;
     font-size: 18px;
@@ -372,7 +372,7 @@ output{
 .output2{
     position: absolute;
     left: 43px;
-    top: 328px;
+    top: 345px;
     padding: 7px 10px;
     color:  #FEC338;
     font-size: 18px;
