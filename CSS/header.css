@@ -1,0 +1,85 @@
+.header{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: inline-block;
+    justify-content: space-between;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    z-index: 10000;
+    width: 100%;
+    background: #0000004d;
+}
+
+.header .structure {
+    padding: 1rem 0;
+}
+
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo{
+    background-color: gray;
+    width: 12.5rem;
+    height: 4.7rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.t_l{
+    color: white;
+    font-size: 1.5rem;
+}
+.first{
+    display: flex;
+    align-items: center;
+    float: left;
+    width: auto;
+    justify-content: space-between;
+}
+.struct{
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: inline-block;
+    justify-content: space-between;
+    z-index: 10000;
+    margin: auto;
+    padding: 1rem;
+}
+.icon{
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+
+}
+.name{
+    color: white;
+    font-size: 1rem;
+    width: 12.5rem;
+    margin-left: 1.5rem;
+}
+.kont{
+    display: flex;
+    align-items: center;
+
+}
+.rasp{
+    color: white;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+}
+.WA{
+    color: white;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.second{
+    display: flex;
+    width: auto;
+    align-items: center;
+    float: right;
+}
