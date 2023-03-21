@@ -1,8 +1,5 @@
 .header{
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    align-items: inline-block;
-    justify-content: space-between;
     position: fixed;
     top: 0rem;
     left: 0rem;
@@ -12,9 +9,11 @@
 }
 
 .header .structure {
+    display: flex;
     padding: 1rem 0;
+    align-items: inline-block;
+    justify-content: space-between;
 }
-
 
 .clearfix:after{
     content: "";
@@ -33,24 +32,20 @@
     color: white;
     font-size: 1.5rem;
 }
-.first{
+.header-logo{
     display: flex;
     align-items: center;
     float: left;
     width: auto;
     justify-content: space-between;
 }
-.struct{
-    width: 90%;
-    font-family: 'Montserrat', sans-serif;
+.header-contact{
     display: flex;
-    align-items: inline-block;
-    justify-content: space-between;
-    z-index: 10000;
-    margin: auto;
-    padding: 1rem;
+    width: auto;
+    align-items: center;
+    float: right;
 }
-.icon{
+.icon_wa{
     border-radius: 100%;
     width: 2rem;
     height: 2rem;
@@ -62,12 +57,12 @@
     width: 12.5rem;
     margin-left: 1.5rem;
 }
-.kont{
+.contacts{
     display: flex;
     align-items: center;
 
 }
-.rasp{
+.schedule{
     color: white;
     font-size: 1rem;
     margin-right: 1.5rem;
@@ -76,10 +71,4 @@
     color: white;
     font-size: 1rem;
     text-decoration: underline;
-}
-.second{
-    display: flex;
-    width: auto;
-    align-items: center;
-    float: right;
 }
