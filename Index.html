@@ -47,45 +47,32 @@
                 </div>
             </div>
             <div class="guarantee">
-                <div class="fon">
+                <div class="text_guarantee">
                     <p>Устанавливаем натяжные потолки с 2015 года. <b>Честность и качество</b> — залог успеха нашей
                         работы!</p>
-                    <div class="pic"><img src="assets/lenta.png" alt="" width="240px" height="70px"></div>
+                    <div class="picture_lenta"><img src="assets/lenta.png" alt="" width="240px" height="70px"></div>
                 </div>
             </div>
         </div>
-        <div class="right">
-            <div class="back"></div>
+        <div class="right-item">
+            <div class="background_rectangle"></div>
 
-            <div class="mai">
-                <div class="container"><h2>Расчёт стоимости</h2><img class="calc" src="assets/calc.png" alt=""
-                                                                     width="100px" height="100px"></div>
-                <div class="polz">
-                    <p class="sl"><b>Площадь потолка</b></p>
-                    <div class="sli">
+            <div class="calculator">
+                <div class="container"><h2>Расчёт стоимости</h2><img class="calculator_picture" src="assets/calc.png" alt="" width="100px" height="100px"></div>
+                <div class="slider-main">
+                    <p class="slider-text"><b>Площадь потолка</b></p>
+                    <div class="slider-active">
                         <p class="min">01</p>
-                        <input type="range" id="fader" class="range" min="1" max="200" value="1" step="1"
+                        <input type="range" id="fader" class="range-first" min="1" max="200" value="1" step="1"
                                oninput="outputUpdate(value); range()">
-                        <output for="fader" id="volume">1 м2</output>
+                        <output class="output" for="fader" id="volume">1 м2</output>
                         <p class="max">200</p>
                     </div>
                     <script type="text/javascript">
                         function outputUpdate(vol) {
                             var output = document.querySelector('#volume');
                             output.value = vol + ' м2';
-                            output.style.left = vol * 1.9 - 20 + 'px';
-                            if (output.value > 1) {
-                                output.style.left = vol * 1.9 - 30 + 'px';
-                            }
-                            if (output.value > 18) {
-                                output.style.left = vol * 1.9 - 35 + 'px';
-                            }
-                            if (output.value > 43) {
-                                output.style.left = vol * 1.9 - 60 + 'px';
-                            }
-                            if (output.value > 99) {
-                                output.style.left = vol * 1.9 - 100 + 'px';
-                            }
+                            output.style.left = vol*1.8 + 48 + 'px';
                         }
 
                         function outputUpdate1(vol) {
@@ -107,8 +94,8 @@
                         }
                     </script>
                 </div>
-                <div class="polz">
-                    <p class="sl1"><b>Количество углов</b></p>
+                <div class="slider-main">
+                    <p class="slider-text"><b>Количество углов</b></p>
                     <div class="sli1">
                         <p class="min1">01</p>
                         <input type="range" id="fader1" class="range1" min="1" max="10" value="1" step="1"
