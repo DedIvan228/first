@@ -1,8 +1,11 @@
 .homepage_wrapper {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)),
     url(../assets/background.png) center center;
+    box-sizing: border-box;
+    width: 100%;
 }
 .homepage {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     width: 80%;
@@ -15,7 +18,6 @@
 
 
 .left-item{
-    display: flex;
     flex-direction: column;
     vertical-align: middle;
 }
@@ -43,46 +45,55 @@ h1{
     background-clip: text;
     background-image: linear-gradient(to right, #FEDA82, #FEC338);
 }
+
 .guarantee{
-    position: relative;
-    bottom: -8rem;
+    position: absolute;
+    width: min-content;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    bottom: 0;
     left: 0;
 }
 .text_guarantee{
     background-color: white;
-    width: 200px;
-    height: 120px;
+    height: auto;
+    width: 10rem;
     border-radius: 10px;
-    font-size: 13px;
-    padding-top: 3px;
+    font-size: 0.65rem;
+    padding: 0.5rem;
+    padding-bottom: 2rem;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 .picture_lenta{
-    margin-left: -150px;
-    margin-top: -10px;
-    width: 480px;
-    height: 100px;
+    width: 12rem;
+}
+
+.right-item{
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 .background_rectangle{
+    position: absolute;
     background-color: white;
     width: 400px;
     height: 620px;
     border-radius: 20px;
 }
 .calculator{
-    position: absolute;
+    position: relative;
+    top: 0px;
     background-color: white;
     width: 440px;
     height: 599px;
-    margin-top: -620px;
-    margin-left: -40px;
     border-radius: 20px;
-    z-index: 1000;
+    z-index: 1;
     box-shadow: 0.02em 0.02em 5px;
-    padding-left: 50px;
-    padding-top: 10px;
+    padding: 0.2rem 2rem;
+    box-sizing: border-box;
 }
 
 .slider-main{
@@ -93,6 +104,7 @@ h1{
     margin-bottom: 0px;
 }
 output{
+    left: 2rem;
     position: absolute;
     padding: 7px 4px;
     color:  #FEC338;
@@ -406,21 +418,4 @@ output{
 }
 .tex{
     margin-top: 20px;
-}
-.right-item{
-    margin-left: 60px;
-}
-@media(max-width: 1720px){
-    .main{
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-    }
-    .right{
-        margin-top: 200px;
-        margin-left: -300px;
-    }
-    .lenta{
-        margin-left: 200px;
-    }
 }

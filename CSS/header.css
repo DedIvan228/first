@@ -21,6 +21,7 @@
     clear: both;
 }
 .logo{
+    padding: 1.3rem 3rem;
     background-color: gray;
     width: 12.5rem;
     height: 4.7rem;
@@ -38,6 +39,7 @@
     float: left;
     width: auto;
     justify-content: space-between;
+    vertical-align: middle;
 }
 .header-contact{
     display: flex;

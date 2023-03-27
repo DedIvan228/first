@@ -3,33 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html{
+    margin: 0;
+    padding: 0rem;
     /*background: */
     /*    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)),*/
     /*    url(../assets/background.png) center center;*/
-    min-height: 100%;
-    width: 100vw;
+    width: 100%;
+    height: 96%;
     background-size: cover;
-    min-width: 75rem;
-    font-size: 20px;
+    font-size: .99vw;
     align-items: center;
 }
 body{
-    min-width: 100vw;
-    min-height: 100%;
+    width: 100%;
     margin: 0rem;
     padding: 0rem;
     align-items: center;
 
 }
 .back{
-    width: 100vw;
-    height: 100vh;
+    margin: 0px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 .structure{
     width: 80%;
     margin: auto;
-    height: auto;
     padding-bottom: 5rem;
     padding-top: 5rem;
 }
