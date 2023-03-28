@@ -62,26 +62,26 @@
                 <div class="slider-main">
                     <p class="slider-text"><b>Площадь потолка</b></p>
                     <div class="slider-active">
-                        <p class="min">01</p>
                         <input type="range" id="fader" class="range-first" min="1" max="200" value="1" step="1"
                                oninput="outputUpdate(value); range()">
                         <output class="output" for="fader" id="volume">1 м2</output>
+                        <p class="min">01</p>
                         <p class="max">200</p>
                     </div>
                     <script type="text/javascript">
                         function outputUpdate(vol) {
                             var output = document.querySelector('#volume');
                             output.value = vol + ' м2';
-                            output.style.left = vol*1.8 + 48 + 'px';
+                            output.style.left = vol*0.3225/3.85 + 2.34786 + 'rem';
+                            if(vol*0.3225/3.85 + 2.34786 > 17.2582){
+                                output.style.left = 17.2582;
+                            }
                         }
 
                         function outputUpdate1(vol) {
                             var output = document.querySelector('#volume1');
                             output.value = vol;
-                            output.style.left = vol * 38 + 7 + 'px';
-                            if (output.value > 1) {
-                                output.style.left = vol * 39 + 12 + 'px';
-                            }
+                            output.style.left = vol*1.9+ 0.3 + 'rem';
                         }
 
                         function outputUpdate2(vol) {
@@ -96,21 +96,21 @@
                 </div>
                 <div class="slider-main">
                     <p class="slider-text"><b>Количество углов</b></p>
-                    <div class="sli1">
-                        <p class="min1">01</p>
+                    <div class="slider-active">
                         <input type="range" id="fader1" class="range1" min="1" max="10" value="1" step="1"
                                oninput="outputUpdate1(value); range()">
                         <output class="output1" for="fader1" id="volume1">1</output>
+                        <p class="min1">01</p>
                         <p class="max1">10</p>
                     </div>
                 </div>
                 <div class="polz">
                     <p class="sl1"><b>Количество светильников</b></p>
-                    <div class="sli1">
-                        <p class="min1">01</p>
+                    <div class="slider-active">
                         <input type="range" id="fader2" class="range2" min="1" max="10" value="1" step="1"
                                oninput="outputUpdate2(value); range()">
                         <output class="output2" for="fader2" id="volume2">1</output>
+                        <p class="min1">01</p>
                         <p class="max1">10</p>
                     </div>
                 </div>
