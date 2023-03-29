@@ -60,7 +60,7 @@
             <div class="calculator">
                 <div class="container"><h2>Расчёт стоимости</h2><img class="calculator_picture" src="assets/calc.png" alt="" width="100px" height="100px"></div>
                 <div class="slider-main">
-                    <p class="slider-text"><b>Площадь потолка</b></p>
+                    <p class="slider-text">Площадь потолка</p>
                     <div class="slider-active">
                         <input type="range" id="fader" class="range-first" min="1" max="200" value="1" step="1"
                                oninput="outputUpdate(value); range()">
@@ -72,30 +72,29 @@
                         function outputUpdate(vol) {
                             var output = document.querySelector('#volume');
                             output.value = vol + ' м2';
-                            output.style.left = vol*0.3225/3.85 + 2.34786 + 'rem';
-                            if(vol*0.3225/3.85 + 2.34786 > 17.2582){
-                                output.style.left = 17.2582;
+                            if(vol < 10){
+                                output.style.left = vol*0.3225/4 + 2.34786;
+                            }
+                            else{
+                                output.style.left = vol*0.3225/3.85 + 2.34786 - 0.86 + 'rem';
                             }
                         }
 
                         function outputUpdate1(vol) {
                             var output = document.querySelector('#volume1');
                             output.value = vol;
-                            output.style.left = vol*1.9+ 0.3 + 'rem';
+                            output.style.left = vol*1.8+ 0.4 + 'rem';
                         }
 
                         function outputUpdate2(vol) {
                             var output = document.querySelector('#volume2');
                             output.value = vol;
-                            output.style.left = vol * 38 + 7 + 'px';
-                            if (output.value > 1) {
-                                output.style.left = vol * 39 + 12 + 'px';
-                            }
+                            output.style.left = vol*1.8+ 0.4 + 'rem';
                         }
                     </script>
                 </div>
                 <div class="slider-main">
-                    <p class="slider-text"><b>Количество углов</b></p>
+                    <p class="slider-text">Количество углов</p>
                     <div class="slider-active">
                         <input type="range" id="fader1" class="range1" min="1" max="10" value="1" step="1"
                                oninput="outputUpdate1(value); range()">
@@ -104,8 +103,8 @@
                         <p class="max1">10</p>
                     </div>
                 </div>
-                <div class="polz">
-                    <p class="sl1"><b>Количество светильников</b></p>
+                <div class="slider-main">
+                    <p class="slider-text">Количество светильников</p>
                     <div class="slider-active">
                         <input type="range" id="fader2" class="range2" min="1" max="10" value="1" step="1"
                                oninput="outputUpdate2(value); range()">
@@ -114,17 +113,16 @@
                         <p class="max1">10</p>
                     </div>
                 </div>
-                <div class="price">
-                    <p class="pri">Цена для вас</p>
-                    <div class="pric">
-                        <div class="cena"><b>19 577<span class="rub">₽</span></b></div>
+                <div class="price-main">
+                    <p class="price-text">Цена для вас</p>
+                    <div class="price">
+                        <div class="price-value">19 577<span class="currency">₽</span></div>
                         <img class="line" src="assets/line.png" alt="">
                     </div>
                 </div>
-                <input class="tel" type="tel">
-                <p class="pole">Ваш номер телефона</p>
-                <img class="iconc" src="assets/icon.png" alt="">
-                <a class="zaiyvka" href=""><p class="tex">отправить заявку</p></a>
+                <img class="icon-phone" src="assets/icon.png" alt="" >
+                <input class="phone-numbers" type="text" placeholder="Ваш номер телефона">
+                <div class="button" href=""><p class="tex">отправить заявку</p></div>
             </div>
         </div>
     </div>

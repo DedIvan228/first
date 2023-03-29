@@ -2,7 +2,8 @@
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)),
     url(../assets/background.png) center center;
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
+    background-size: cover;
 }
 .homepage {
     position: relative;
@@ -63,7 +64,7 @@ h1{
     background-color: white;
     height: auto;
     width: 10rem;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     font-size: 0.65rem;
     padding: 0.5rem;
     padding-bottom: 2rem;
@@ -73,7 +74,7 @@ h1{
 .picture_lenta{
     position: absolute;
     top: 4.5rem;
-    width: 12rem;
+    min-width: 12rem;
 }
 
 
@@ -100,23 +101,43 @@ h1{
     height: 30rem;
     border-radius: 1rem;
     z-index: 1;
-    box-shadow: 0.02em 0.02em 5px;
+    box-shadow: 0.02rem 0.02rem 0.25rem;
     padding: 0.5rem 2.3rem;
     box-sizing: border-box;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    font-weight: bold;
+}
+.calculator_picture{
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    margin-top: -3rem;
+    right: 0;
+}
 h2{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    width: min-content;
+    white-space: nowrap;
+    padding: 0 0.3rem;
 }
 
 
 /*первый слайдер*/
 .slider-main{
-    margin-bottom: 3rem;
-    width: 18rem;
+    margin-bottom: 2.9rem;
+    width: 17.2rem;
 }
 .slider-text{
-    font-size: 1rem;
-    margin-bottom: 0rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0 0.3rem;
+    margin-bottom: 0.1rem;
 }
 output{
     position: absolute;
@@ -126,7 +147,7 @@ output{
     width: 6rem;
 }
 #fader{
-    width: 18rem;
+    width: 17.2rem;
     height: 0.8rem;
 }
 .slider-active{
@@ -141,7 +162,7 @@ output{
 }
 .max{
     position: absolute;
-    margin-left: 16rem;
+    margin-left: 15.2rem;
     margin-top: 0;
     color: rgba(196, 196, 196, 0.644);
 }
@@ -206,7 +227,7 @@ output{
 }
 .max1{
     position: absolute;
-    margin-left: 16.8rem;
+    margin-left: 16rem;
     margin-top: 0;
     color: rgba(196, 196, 196, 0.644);
 }
@@ -219,7 +240,7 @@ output{
     margin-left: 0.2rem;
 }
 #fader1{
-    width: 18rem;
+    width: 17.2rem;
     height: 0.8rem;
 }
 .range1 {
@@ -277,32 +298,30 @@ output{
 
 
 
-
+/*третий слайдер*/
 .output2{
     position: absolute;
-    left: 43px;
-    top: 345px;
-    padding: 7px 10px;
     color:  #FEC338;
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: bold;
-    width: 70px;
+    margin-top: 0.1rem;
+    margin-left: 0.2rem;
 }
 #fader2{
     position: relative;
-    width: 22rem;
+    width: 17.2rem;
 }
 .range2 {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
-    height: 10px;
+    height: 0.8rem;
     background: transparent;
 }
 
 .range2::-webkit-slider-runnable-track {
     width: 100%;
-    height: 10px;
+    height: 0.8rem;
     background: rgba(196, 196, 196, 0.644);
     position: relative;
     border-radius: 20px;
@@ -310,11 +329,11 @@ output{
 
 .range2::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 20px;
-    width: 20px;
+    height: 1rem;
+    width: 1rem;
     border-radius: 50%;
     background: #FEC338;
-    margin-top: -5px;
+    margin-top: -0.1rem;
     position: relative;
     z-index: 0;
 }
@@ -348,84 +367,80 @@ output{
     background: black;
     z-index: 10000;
 }
-.container{
+
+
+/*цена*/
+.price-main{
     display: flex;
-    justify-content: space-between;
-    height: 3rem;
-    font-size: 1.5rem;
-    padding-top: 0.5rem;
-    font-weight: bold;
+    height: 2rem;
+    font-weight:500;
+    margin-bottom: 1rem;
+    vertical-align: middle;
+    text-align: center;
 }
-.calculator_picture{
-    width: 6rem;
-    height: 6rem;
-    position: relative;
-    margin-top: -3rem;
-    margin-left: -0.5rem;
+.price-text{
+    width: min-content;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    padding: 0 0.3rem;
+    margin-right: 2rem;
+}
+.price-value{
+    width: 2rem;
+    font-size: 1.2rem;
+    font-weight:500;
+
 }
 .price{
     display: flex;
-    height: 100px;
-    margin-top: 30px;
-}
-.pri{
-    width: 400px;
-    font-size: 20px;
-}
-.cena{
-    width: 400px;
-    position:absolute;
-    margin-left: 190px;
-    font-size: 28px;
-    margin-top: 47px;
-
-}
-.pric{
-    position: absolute;
-    margin-top: -30px;
-}
-.rub{
-    position: absolute;
-    font-size: 20px;
-    margin-top: 8px;
-}
-.line{
-    margin-top: -7px;
-}
-.tel{
-    width: 342px;
-    height: 55px;
-    margin-top: -200px;
-    border-radius: 15px;
-    border: rgba(216, 216, 216, 0.301);
-    background-color: rgba(216, 216, 216, 0.301);
-    font-size: 30px;
-
-}
-.pole{
-    color: rgba(141, 141, 141, 0.651);
-    position: absolute;
-    margin-top: -37px;
-    margin-left: 50px;
-}
-.iconc{
-    position: absolute;
-    margin-left: -340px;
-    margin-top: -8px
-}
-.zaiyvka{
-    width: 342px;
-    height: 60px;
-    background-image: linear-gradient(to bottom,#FEDA82, #FEC338);
-    position: absolute;
-    border-radius: 15px;
-    margin-top: 50px;
-    margin-left: -340px;
-    text-decoration: none;
-    color: black;
-    box-shadow: 0 3px 0 rgba(73, 20, 20, 0.342);
+    width: min-content;
+    white-space: nowrap;
+    justify-content: space-between;
+    vertical-align: middle;
     text-align: center;
 }
-.tex{
-    margin-top: 20px;
+.currency{
+    font-size: 1.2rem;
+}
+.line{
+    position: absolute;
+    margin-top: -0.7rem;
+    margin-left: -1.7rem;
+    width: 8rem;
+}
+
+
+/*ввод телефона*/
+.phone-numbers{
+    width: 17.2rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    padding: 0 2rem;
+    border: rgba(216, 216, 216, 0.301);
+    background-color: rgba(216, 216, 216, 0.301);
+    font-size: 1rem;
+    border: 0.05rem solid rgb(197, 197, 197);
+    margin-bottom: 1rem;
+
+}
+.icon-phone{
+    margin-top: 0.7rem;
+    margin-left: 0.2rem;
+    position: absolute;
+    width: 1.6rem;
+
+}
+
+
+/*кнопка*/
+.button{
+    width: 17.2rem;
+    height: 3rem;
+    padding: 1rem 0;
+    background-image: linear-gradient(to bottom,#FEDA82, #FEC338);
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0.15rem 0 rgba(73, 20, 20, 0.342);
+    text-align: center;
 }
