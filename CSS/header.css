@@ -10,7 +10,8 @@
 
 .header .structure {
     display: flex;
-    padding: 1rem 0;
+    padding: 3.8rem 11.2rem;
+    padding-bottom: 2rem;
     align-items: inline-block;
     justify-content: space-between;
 }
@@ -21,9 +22,9 @@
     clear: both;
 }
 .logo{
-    padding: 1.3rem 3rem;
+    padding: 1.6rem 3rem;
     background-color: gray;
-    width: 12.5rem;
+    width: 12.3rem;
     height: 4.7rem;
     border-radius: 2.5rem;
     text-align: center;
@@ -31,7 +32,7 @@
 }
 .t_l{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .header-logo{
     display: flex;
@@ -40,37 +41,43 @@
     width: auto;
     justify-content: space-between;
     vertical-align: middle;
+    padding-left: 2.6rem;
 }
 .header-contact{
     display: flex;
     width: auto;
     align-items: center;
     float: right;
+    padding: 0 11rem;
 }
 .icon_wa{
+    margin-top: 0.1rem;
     border-radius: 100%;
-    width: 2rem;
-    height: 2rem;
+    width: 3.45rem;
+    height: 3.45rem;
 
 }
 .name{
     color: white;
-    font-size: 1rem;
-    width: 12.5rem;
-    margin-left: 1.5rem;
+    font-size: 1.04rem;
+    width: 16.7rem;
+    box-sizing: border-box;
+    padding: 0 2.8rem;
 }
 .contacts{
     display: flex;
     align-items: center;
-
+    padding: 0.74rem 0;
 }
 .schedule{
     color: white;
-    font-size: 1rem;
-    margin-right: 1.5rem;
+    font-size: 1.04rem;
+    padding: 0 4.9rem;
 }
 .WA{
+    margin-top: 0.1rem;
     color: white;
-    font-size: 1rem;
+    font-size: 1.05rem;
     text-decoration: underline;
+    margin-left: 1rem;
 }
