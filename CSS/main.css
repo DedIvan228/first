@@ -22,8 +22,11 @@
 
 /*текст (homepage -> left-item)*/
 .left-item{
+    position: relative;
+    top: -7.3rem;
     flex-direction: column;
     vertical-align: middle;
+    width: 60rem;
 }
 
 .white{
@@ -38,7 +41,7 @@
 .info_homepage h1{
     margin-bottom: 2.5rem;
     font-size: 3.492rem;
-    width: 65rem;
+    width: 60rem;
 }
 .main_text{
     color: white;
@@ -63,7 +66,7 @@ h1{
     width: min-content;
     align-items: center;
     text-align: center;
-    bottom: 9.4rem;
+    bottom: 24.3rem;
     left: 0;
 }
 .text_guarantee{
@@ -88,6 +91,8 @@ h1{
 
 /*общие настройки калькулятора*/
 .right-item{
+    top: -3.6rem;
+    left: -0.7rem;
     display: flex;
     align-items: center;
     position: relative;
@@ -95,23 +100,22 @@ h1{
 .background_rectangle{
     position: absolute;
     background-color: white;
-    width: 20rem;
-    height: 31rem;
+    width: 34.2rem;
+    height: 45.6rem;
     border-radius: 1rem;
-    left: 1rem;
+    left: 2rem;
     top: 0;
 }
 .calculator{
     position: relative;
-    top: 0px;
     background-color: white;
-    width: 22rem;
-    height: 30rem;
+    width: 38.2rem;
+    height: 44.7rem;
     border-radius: 1rem;
     z-index: 1;
     box-shadow: 0.02rem 0.02rem 0.25rem;
-    padding: 0.5rem 2.3rem;
-    box-sizing: border-box;
+    padding: 1.6rem 4.19rem;
+    box-sizing: border-box
 }
 .container{
     display: flex;
@@ -120,42 +124,45 @@ h1{
     font-size: 1.5rem;
     padding-top: 0.5rem;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 .calculator_picture{
-    width: 6rem;
-    height: 6rem;
+    width: 13rem;
+    height: 13rem;
     position: relative;
-    margin-top: -3rem;
-    right: 0;
+    margin-top: -6.1rem;
+    right: 1.7rem;
+    transform: rotate(-7deg)
 }
 h2{
-    font-size: 1.2rem;
+    font-size: 2rem;
     width: min-content;
     white-space: nowrap;
-    padding: 0 0.3rem;
 }
 
 
 /*первый слайдер*/
 .slider-main{
-    margin-bottom: 2.9rem;
-    width: 17.2rem;
+    margin-bottom: 3.5rem;
+    width: 29.8rem;
 }
 .slider-text{
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     font-weight: 500;
-    padding: 0 0.3rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.565rem;
+    width: auto;
+    white-space: nowrap;
 }
 output{
     position: absolute;
     color:  #FEC338;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    margin-top: 0.2rem;
     width: 6rem;
 }
 #fader{
-    width: 17.2rem;
+    width: 29.8rem;
     height: 0.8rem;
 }
 .slider-active{
@@ -164,14 +171,16 @@ output{
     height: 0.8rem;
 }
 .min{
-    margin-top: 0;
+    margin-top: -0.25rem;
     position: absolute;
+    font-size: 1.2rem;
     color: rgba(196, 196, 196, 0.644);
 }
 .max{
     position: absolute;
-    margin-left: 15.2rem;
-    margin-top: 0;
+    margin-left: 27.6rem;
+    margin-top: -0.25rem;
+    font-size: 1.2rem;
     color: rgba(196, 196, 196, 0.644);
 }
 .range-first {
@@ -229,26 +238,28 @@ output{
 
 /*второй слайдер*/
 .min1{
-    margin-top: 0;
+    margin-top: -0.25rem;
     position: absolute;
+    font-size: 1.2rem;
     color: rgba(196, 196, 196, 0.644);
 }
 .max1{
+    margin-top: -0.25rem;
+    font-size: 1.2rem;
     position: absolute;
-    margin-left: 16rem;
-    margin-top: 0;
+    margin-left: 28.5rem;
     color: rgba(196, 196, 196, 0.644);
 }
 .output1{
     position: absolute;
     color:  #FEC338;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 0.1rem;
     margin-left: 0.2rem;
 }
 #fader1{
-    width: 17.2rem;
+    width: 29.8rem;
     height: 0.8rem;
 }
 .range1 {
@@ -310,14 +321,14 @@ output{
 .output2{
     position: absolute;
     color:  #FEC338;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 0.1rem;
     margin-left: 0.2rem;
 }
 #fader2{
     position: relative;
-    width: 17.2rem;
+    width: 29.8rem;
 }
 .range2 {
     -webkit-appearance: none;
@@ -382,22 +393,23 @@ output{
     display: flex;
     height: 2rem;
     font-weight:500;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     vertical-align: middle;
     text-align: center;
 }
 .price-text{
     width: min-content;
     white-space: nowrap;
-    font-size: 1.2rem;
-    padding: 0 0.3rem;
+    font-size: 1.45rem;
+    padding: 0.2rem 0;
     margin-right: 2rem;
 }
 .price-value{
-    width: 2rem;
-    font-size: 1.2rem;
-    font-weight:500;
-
+    margin-left: 1.5rem;
+    margin-top: -0.45rem;
+    width: min-content;
+    font-size: 2.3rem;
+    font-weight: 600;
 }
 .price{
     display: flex;
@@ -408,47 +420,53 @@ output{
     text-align: center;
 }
 .currency{
-    font-size: 1.2rem;
+    position: absolute;
+    margin-left: -0.2rem;
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
 }
 .line{
     position: absolute;
-    margin-top: -0.7rem;
-    margin-left: -1.7rem;
-    width: 8rem;
+    margin-top: -1rem;
+    margin-left: -0.2rem;
+    width: 12rem;
 }
 
 
 /*ввод телефона*/
 .phone-numbers{
-    width: 17.2rem;
-    height: 2.75rem;
+    width: 29.8rem;
+    height: 5.2rem;
     border-radius: 0.75rem;
-    padding: 0 2rem;
+    padding: 0 4rem;
     border: rgba(216, 216, 216, 0.301);
     background-color: rgba(216, 216, 216, 0.301);
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: 0.05rem solid rgb(197, 197, 197);
-    margin-bottom: 1rem;
+    margin-bottom: 1.139rem;
 
 }
 .icon-phone{
-    margin-top: 0.7rem;
-    margin-left: 0.2rem;
+    margin-top: 1.5rem;
+    margin-left: 1.1rem;
     position: absolute;
-    width: 1.6rem;
+    width: 2.5rem;
 
 }
 
 
 /*кнопка*/
 .button{
-    width: 17.2rem;
-    height: 3rem;
-    padding: 1rem 0;
+    width: 29.8rem;
+    height: 5.4rem;
+    padding: 1.8rem 0;
     background-image: linear-gradient(to bottom,#FEDA82, #FEC338);
-    border-radius: 0.75rem;
+    border-radius: 1.3rem;
     text-decoration: none;
     color: black;
     box-shadow: 0 0.15rem 0 rgba(73, 20, 20, 0.342);
     text-align: center;
+}
+.tex{
+    font-size: 1.38rem;
 }

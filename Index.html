@@ -73,23 +73,23 @@
                             var output = document.querySelector('#volume');
                             output.value = vol + ' м2';
                             if(vol < 10){
-                                output.style.left = vol*0.3225/4 + 2.34786;
+                                output.style.left = vol*0.298/2 + 3.2 + 'rem';
                             }
                             else{
-                                output.style.left = vol*0.3225/3.85 + 2.34786 - 0.86 + 'rem';
+                                output.style.left = vol*0.298/2 + 2.5+ 'rem';
                             }
                         }
 
                         function outputUpdate1(vol) {
                             var output = document.querySelector('#volume1');
                             output.value = vol;
-                            output.style.left = vol*1.8+ 0.4 + 'rem';
+                            output.style.left = vol*3.2 + 1 + 'rem';
                         }
 
                         function outputUpdate2(vol) {
                             var output = document.querySelector('#volume2');
                             output.value = vol;
-                            output.style.left = vol*1.8+ 0.4 + 'rem';
+                            output.style.left = vol*3.2 + 1 + 'rem';
                         }
                     </script>
                 </div>
@@ -116,8 +116,8 @@
                 <div class="price-main">
                     <p class="price-text">Цена для вас</p>
                     <div class="price">
-                        <div class="price-value">19 577<span class="currency">₽</span></div>
                         <img class="line" src="assets/line.png" alt="">
+                        <div class="price-value">19 577<span class="currency">₽</span></div>
                     </div>
                 </div>
                 <img class="icon-phone" src="assets/icon.png" alt="" >
